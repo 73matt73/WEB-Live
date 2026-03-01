@@ -2,8 +2,8 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live ШІ-Аналіз (Веб-камера) v1.1</title>
+    <meta name="viewport" content="width=850">
+    <title>Live ШІ-Аналіз (Веб-камера)</title>
     <script defer src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
     <script defer src="script.js"></script>
     <style>
@@ -11,46 +11,36 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
             text-align: center; 
             margin: 0; 
-            padding: 1rem;
+            padding: 2rem; 
             background-color: #f3f4f6; 
             color: #1f2937;
         }
         .app-wrapper {
-            max-width: 800px;
+            width: 800px; 
             margin: 0 auto;
             background: white;
-            padding: 20px;
+            padding: 30px;
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            box-sizing: border-box;
         }
-        h2 { margin-top: 0; color: #111827; font-size: 1.5rem; }
-
+        h2 { margin-top: 0; color: #111827; }
         .video-container { 
             position: relative; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: inline-block; 
             margin-top: 20px; 
             border-radius: 8px;
             overflow: hidden;
             background-color: #000;
-            width: 100%;
         }
-
         video { 
             display: block;
-            width: 100%;
-            height: auto; 
         }
-        
         canvas { 
             position: absolute; 
             top: 0; 
             left: 0; 
-            width: 100%;
-            height: 100%;
         }
-
         #status { 
             margin: 15px 0; 
             font-weight: 500; 
@@ -58,7 +48,6 @@
             background: #fef3c7; 
             color: #92400e;
             border-radius: 6px;
-            font-size: 0.9rem;
         }
     </style>
 </head>
