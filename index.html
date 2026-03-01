@@ -11,7 +11,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
             text-align: center; 
             margin: 0; 
-            padding: 2rem; 
+            padding: 1rem;
             background-color: #f3f4f6; 
             color: #1f2937;
         }
@@ -19,28 +19,38 @@
             max-width: 800px;
             margin: 0 auto;
             background: white;
-            padding: 30px;
+            padding: 20px;
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
-        h2 { margin-top: 0; color: #111827; }
+        h2 { margin-top: 0; color: #111827; font-size: 1.5rem; }
+
         .video-container { 
             position: relative; 
-            display: inline-block; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin-top: 20px; 
             border-radius: 8px;
             overflow: hidden;
             background-color: #000;
+            width: 100%;
         }
+
         video { 
             display: block;
-            max-width: 100%; 
+            width: 100%;
+            height: auto; 
         }
+        
         canvas { 
             position: absolute; 
             top: 0; 
             left: 0; 
+            width: 100%;
+            height: 100%;
         }
+
         #status { 
             margin: 15px 0; 
             font-weight: 500; 
@@ -48,6 +58,7 @@
             background: #fef3c7; 
             color: #92400e;
             border-radius: 6px;
+            font-size: 0.9rem;
         }
     </style>
 </head>
